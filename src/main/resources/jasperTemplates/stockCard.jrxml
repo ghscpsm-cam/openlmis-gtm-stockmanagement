@@ -99,10 +99,10 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="95" splitType="Stretch">
+		<band height="125" splitType="Stretch">
 			<printWhenExpression><![CDATA[new Boolean($V{PAGE_NUMBER}.intValue() == 1)]]></printWhenExpression>
 			<staticText>
-				<reportElement x="10" y="0" width="75" height="12" uuid="d88076e4-ce9f-4886-a172-855275a4a5e7">
+				<reportElement x="10" y="0" width="175" height="12" uuid="d88076e4-ce9f-4886-a172-855275a4a5e7">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -112,14 +112,14 @@
 				<text><![CDATA[Establecimiento:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement x="90" y="0" width="85" height="50" uuid="68d8d341-d519-4cd5-adaf-845085a2b343"/>
+				<reportElement x="10" y="14" width="175" height="55" uuid="68d8d341-d519-4cd5-adaf-845085a2b343"/>
 				<textElement verticalAlignment="Top">
 					<font size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{facility}.getName()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="10" y="55" width="90" height="10" uuid="e70d1a9b-4bcc-460c-8ffe-c238d8d4e9af">
+				<reportElement x="10" y="75" width="175" height="10" uuid="e70d1a9b-4bcc-460c-8ffe-c238d8d4e9af">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>
@@ -128,14 +128,14 @@
 				<text><![CDATA[Código de establecimiento:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement x="105" y="55" width="70" height="10" uuid="e28722c1-aff1-4167-af88-1d9b88dc2c81"/>
+				<reportElement x="10" y="87" width="175" height="10" uuid="e28722c1-aff1-4167-af88-1d9b88dc2c81"/>
 				<textElement>
 					<font size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{facility}.getCode()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="185" y="0" width="45" height="12" uuid="f932b782-290f-45d4-9fdf-f2cc21d3088c">
+				<reportElement x="205" y="0" width="175" height="12" uuid="f932b782-290f-45d4-9fdf-f2cc21d3088c">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -146,7 +146,7 @@
 				<text><![CDATA[Programa:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="240" y="0" width="125" height="50" uuid="090f268a-9013-48d7-bf4c-2d082ce82426">
+				<reportElement x="205" y="14" width="175" height="55" uuid="090f268a-9013-48d7-bf4c-2d082ce82426">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -156,7 +156,7 @@
 				<textFieldExpression><![CDATA[$F{program}.getName()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="375" y="75" width="90" height="10" uuid="f233a52e-358f-492e-972b-5893cca24c7f">
+				<reportElement x="400" y="105" width="95" height="10" uuid="f233a52e-358f-492e-972b-5893cca24c7f">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -167,14 +167,14 @@
 				<text><![CDATA[Existencia en mano:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement x="470" y="75" width="115" height="10" uuid="83ee175f-b7f6-47ab-97d1-e0e47cbd5ba8"/>
+				<reportElement x="500" y="105" width="85" height="10" uuid="83ee175f-b7f6-47ab-97d1-e0e47cbd5ba8"/>
 				<textElement>
 					<font size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{decimalFormat}.format($F{stockOnHand}).toString()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="185" y="55" width="85" height="10" uuid="dbb8c60d-f18c-4662-82a9-1469ba5ee29b">
+				<reportElement x="205" y="75" width="175" height="10" uuid="dbb8c60d-f18c-4662-82a9-1469ba5ee29b">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -185,7 +185,7 @@
 				<text><![CDATA[Código de programa:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="275" y="55" width="90" height="10" uuid="1155efb4-d80b-4867-bc2c-4708e21299cb">
+				<reportElement x="205" y="87" width="175" height="10" uuid="1155efb4-d80b-4867-bc2c-4708e21299cb">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -195,7 +195,7 @@
 				<textFieldExpression><![CDATA[$F{program}.getCode()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="375" y="55" width="80" height="10" uuid="36cd07bc-b3ce-4e51-b8b1-0cab5457bdd2">
+				<reportElement x="400" y="75" width="185" height="10" uuid="36cd07bc-b3ce-4e51-b8b1-0cab5457bdd2">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -206,7 +206,7 @@
 				<text><![CDATA[Código de producto:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="460" y="55" width="125" height="10" uuid="86e1db6a-c030-42b4-be86-55aa8a13bffd">
+				<reportElement x="400" y="87" width="185" height="10" uuid="86e1db6a-c030-42b4-be86-55aa8a13bffd">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -216,7 +216,7 @@
 				<textFieldExpression><![CDATA[$F{orderable}.getProductCode()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="375" y="0" width="55" height="12" uuid="f2a68d39-80e0-4c02-a15e-0b1f7ec1e991">
+				<reportElement x="400" y="0" width="185" height="12" uuid="f2a68d39-80e0-4c02-a15e-0b1f7ec1e991">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -227,7 +227,7 @@
 				<text><![CDATA[Producto:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="435" y="0" width="150" height="50" uuid="91c74f77-e92c-4d01-a5c3-39c827cfc9ff">
+				<reportElement x="400" y="14" width="185" height="55" uuid="91c74f77-e92c-4d01-a5c3-39c827cfc9ff">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -237,7 +237,7 @@
 				<textFieldExpression><![CDATA[$F{orderable}.getFullProductName()]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement x="85" y="75" width="90" height="10" uuid="40f09f1a-ba6b-4bcc-ad3a-0bffbbb8d984">
+				<reportElement x="85" y="105" width="100" height="10" uuid="40f09f1a-ba6b-4bcc-ad3a-0bffbbb8d984">
 					<printWhenExpression><![CDATA[$P{hasLot}]]></printWhenExpression>
 				</reportElement>
 				<textElement>
@@ -246,7 +246,7 @@
 				<textFieldExpression><![CDATA[$F{lot}.getLotCode()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="10" y="75" width="70" height="10" uuid="4024885e-f119-4a2f-b74c-98624c2ebb3d">
+				<reportElement x="10" y="105" width="70" height="10" uuid="4024885e-f119-4a2f-b74c-98624c2ebb3d">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<printWhenExpression><![CDATA[$P{hasLot}]]></printWhenExpression>
 				</reportElement>
@@ -256,7 +256,7 @@
 				<text><![CDATA[Código de lote:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="185" y="75" width="90" height="10" uuid="c8c868e7-79a6-4fd7-af28-8bb754be0c2d">
+				<reportElement x="205" y="105" width="120" height="10" uuid="c8c868e7-79a6-4fd7-af28-8bb754be0c2d">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -268,7 +268,7 @@
 				<text><![CDATA[Fecha de vencimiento:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="280" y="75" width="85" height="10" uuid="ac3309ea-58c8-4931-a9c2-8af93b151edb">
+				<reportElement x="330" y="105" width="50" height="10" uuid="ac3309ea-58c8-4931-a9c2-8af93b151edb">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<printWhenExpression><![CDATA[$P{hasLot}]]></printWhenExpression>
@@ -406,7 +406,7 @@
 								<reportElement x="0" y="0" width="70" height="30" uuid="2237b77f-d8d1-40c8-9a3c-350b740eecd2"/>
 								<box padding="2"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle"/>
-								<textFieldExpression><![CDATA[$F{lineItem}.getReasonFreeText() != null ? MessageFormat.format("{0} : {1}", $F{lineItem}.getReason().getName(), $F{lineItem}.getReasonFreeText()) : $F{lineItem}.getReason().getName()]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{lineItem}.getReason() == null ? "" : ($F{lineItem}.getReason().getReasonCategory() == org.openlmis.stockmanagement.domain.reason.ReasonCategory.TRANSFER ? ("Overstock".equalsIgnoreCase($F{lineItem}.getReason().getName()) ? "Entrada a Inventario" : $F{lineItem}.getReason().getName()) : ($F{lineItem}.getReasonFreeText() != null ? MessageFormat.format("{0} : {1}", ("Overstock".equalsIgnoreCase($F{lineItem}.getReason().getName()) ? "Entrada a Inventario" : $F{lineItem}.getReason().getName()), $F{lineItem}.getReasonFreeText()) : ("Overstock".equalsIgnoreCase($F{lineItem}.getReason().getName()) ? "Entrada a Inventario" : $F{lineItem}.getReason().getName())))]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
