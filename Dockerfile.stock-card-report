@@ -1,0 +1,4 @@
+ARG BASE_IMAGE=ghcr.io/ghscpsm-cam/openlmis-gtm-stockmanagement:5.3.0-gtm.3
+FROM ${BASE_IMAGE}
+
+COPY service.jar /service.jar
